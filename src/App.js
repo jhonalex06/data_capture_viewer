@@ -3,7 +3,18 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+      <div className="App">
+
+      <TodoItem
+        name={'Danna'}
+      ></TodoItem>
+      <TodoItem
+        name={'Jhon'}
+      ></TodoItem>
+      <TodoItem
+        name={'Marcela'}
+      ></TodoItem>
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -15,10 +26,20 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Aprendamos React
         </a>
       </header>
     </div>
+  );
+}
+
+function TodoItem(props) {
+  return(
+    <li>
+      <span>V</span>
+       <p>LLorar con {props.name}</p>
+      <span>X</span>
+    </li>
   );
 }
 
